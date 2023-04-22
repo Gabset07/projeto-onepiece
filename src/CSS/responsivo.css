@@ -1,0 +1,162 @@
+@media(max-width: 375px){
+    .lista-cards{
+        left: 180px;
+        margin-top: 650px;
+       
+    }
+    .cartao{
+        width: 230px;
+    }
+    .cartao .informacao {
+        margin-top: -15px;
+    }
+    .cartao .informacao {
+        width: 230px
+    }
+
+    .container-imagem img {
+        position: relative;
+        left: 5px;
+          
+    }
+    .container-imagem1 img {
+        position: relative;
+        left: 5px;
+          
+    }
+    .container-imagem2 img{
+        position: relative;
+        left: 0px;
+        width: 230px;
+        height: 240px;
+    }
+    .cartao .descricao{
+        margin-top: -25px;
+        width: 230px;
+    }
+    .cartao .informacao {
+        width: 230px
+    }
+}
+@media(max-width:540px){
+    .lista-cards{
+        right: 260px;
+        margin-top: -165px;
+       
+    }
+
+    .cartao{
+        width: 205px;
+        height: 365px;
+    }
+    .cartao .informacao {
+        margin-top: -15px;
+        position: relative;
+        width: 205px;
+    }
+
+    .container-imagem img {
+        position: relative;
+        left: 0px;
+        width: 210px;  
+    }
+    .container-imagem1 img {
+        position: relative;
+        left: 1px;
+        width: 210px;  
+    }
+    .container-imagem2 img {
+        position: relative;
+        left: 1px;
+        width: 210px;  
+    }
+    .cartao .descricao {
+        margin-top: -20px;
+       
+    }
+}
+
+@media(max-width:620px) {
+    .cavaleiro-slider {
+        padding: 0 15px;
+        gap: 10px;
+    }
+
+    .btn-seta {
+        width: 20px;
+        height: 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .lista-cavaleiros {
+        height: 480px;
+    }
+
+    .cartao .container-imagem {
+        max-height: 230px;
+    }
+
+    .cartao .container-imagem3 {
+        max-height: 230px;
+    }
+
+    .cartao .informacoes .nome {
+        max-width: 50%;
+        font-size: 18px;
+    }
+
+    .cartao .informacoes .vida {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:550px) {
+
+    .cabecalho {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cartao {
+        margin-top: 250px;
+    }
+
+    .cards-slider {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cartao .descricao {
+       position: relative;
+        width: 210px;
+    }
+}
+
+
+@media(max-width:500px) {
+
+    .cabecalho {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cartao {
+        margin-top: -200px;
+    }
+
+    .cards-slider {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cartao .descricao {
+        position: relative;
+        width: 230px;
+    }
+}

@@ -1,0 +1,48 @@
+@keyframes animacao{
+    0% {background-image: url('../Imagens/jack.gif');
+    }
+    33.33%{background-image: url('../Imagens/sanji\ vs\ queen.gif');
+    }
+    66.66%{background-image: url('../Imagens/zoro\ vs\ king.gif');
+    }
+    70.55%{background-image: url('../Imagens/usop\ x\ page\ one.gif');
+    }
+    100%{background-image: url('../Imagens/gif-kaidou\ vs\ luffy.gif');
+    }
+}
+
+@keyframes brilho-luffy {
+    0%{color: var(--azul-marinho-fraco #43B4DE); text-shadow: 0 0 12px var(--azul-shadow-forte), 0 0 50px var(--azul-shadow-fraco);
+    }50%{color: var(--azul-marinho-medio)
+    };100%{color: var(--azul-marinho-forte)}; 
+}
+
+@keyframes brilho-Shanks{
+    0%{color: var(--vermelho--fraco); text-shadow: 0 0 12px var(--vermelho-medio), 0 0 50px var(--vermelho-forte );
+    }50%{color: var(--vermelho-medio);
+    }100% {color: var(--vermelho-forte)};
+}
+
+@keyframes brilho-Roger{
+    0%{color: var(--verde--ultra); text-shadow: 0 0 12px var(--verde--fraco), 0 0 50px var(--verde--forte );
+    }50%{color: var(--verde--medio);
+    }100% {color: var(--verde--ultra)};
+}
+
+@keyframes brilho-Kaidou{
+    0%{color: var(--roxo--fraco); text-shadow: 0 0 12px var(--roxo--forte), 0 0 50px var(--azul-cristal);
+    }50%{color: var(--azul-cristal-escuro);
+    }100% {color: var(--roxo--medio)};
+}
+
+@keyframes brilho-Barba{
+    0%{color: var(--roxo--barba-forte); text-shadow: 0 0 12px var(--roxo--barba-medio), 0 0 50px var(--roxo--barba-fraco);
+    }50%{color: var(--roxo--preto);
+    }100% {color: var(--roxo--barba-medio)};
+}
+
+@keyframes brilho-Yamato{
+    0%{color: var(--rosa--forter); text-shadow: 0 0 12px var(--rosa--medio), 0 0 50px var(--rosa--fraco);
+    }50%{color: var(--rosa--medio);
+    }100% {color: var(--rosa--forter)};
+}

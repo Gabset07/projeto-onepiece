@@ -1,0 +1,559 @@
+body {
+    min-height: 100vh;
+    font-family: 'cherry', sans-serif;
+    font-size: 15px;
+    background-image: url('../Imagens/gif-kaidou\ vs\ luffy.gif'), url('../Imagens/sanji\ vs\ queen.gif'), url('../Imagens/zoro\ vs\ king.gif'), url('../Imagens/jack.gif'),url('../Imagens/usop\ x\ page\ one.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: animacao 30s infinite;
+
+    color: #ffffff;
+}
+
+
+/* Cabeçalho */
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho img {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+}
+
+.cabecalho .titulo {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Setas */
+
+
+.cards-slider {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn-seta img {
+    width: 40px;
+    height: 40px;
+
+
+}
+
+
+.btn-seta {
+    margin-top: 150px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    ;
+    border: 0;
+    border-radius: 15px;
+    background-color: #ffffff;
+
+}
+
+.btn-seta:hover {
+    background-color: blue;
+}
+
+.btn-voltar {
+    transform: rotate(180deg);
+}
+
+
+.lista-cards {
+    position: absolute;
+}
+
+.cartao {
+    margin-top: 150px;
+    max-width: 270px;
+    max-height: 380px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 12px 12px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.selecionado {
+    z-index: 1;
+    opacity: 1;
+}
+
+/* Cartão */
+
+.container-imagem img {
+    width: 220px;
+    height: 240px; 
+    margin-top: 30px;   
+}
+
+
+/* Cartão 1 */
+
+.cartao .informacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #011C40;
+    width: 260px;
+    height: 30px;
+    margin-top: 10px;
+    
+}
+
+.cartao .informacao .nome {
+    padding: 8px 10px;
+    font-family: 'Glossy',sans-serif;
+    color: #2976B0;
+    animation: brilho-luffy 3s ease-in-out infinite;
+    font-weight: bold;
+
+
+}
+
+.cartao .descricao {
+    margin-top: -80px;
+    border-radius: 5px;
+    position: relative;
+    width: 270px;
+    height: 145px;
+    padding: 2px;
+    margin-top: -26px;
+    background:#011C40;
+    animation: brilho-luffy 2s ease-in-out infinite;
+}
+.cartao .descricao .titulo{
+    margin-top: 3px;
+    text-align: center;
+    color: #f1ecff;
+    background-color: #033E8C;
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    
+}
+
+.cartao .descricao .texto{
+    margin-top: -8px;
+    background-color:#73C6D9;
+    color: #333;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.fundo-1{
+    background: url(../Imagens/luffy-gear5.gif);
+    background:cover no-repeat;
+    background-position-x: 55%;
+    
+    
+    
+}
+
+.container-imagem1 img {
+    width: 220px;
+    height: 215px;
+    margin-top: 30px;
+    position: relative;
+    right: 25px;    
+}
+
+/* Cartao 2 */
+
+.cartao2 .informacao {
+    margin-top: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(119, 35, 35);
+    width: 260px;
+    height: 30px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.cartao2 .informacao .nome {
+    padding: 8px 10px;
+    font-family: 'Glossy',sans-serif;
+    color: var(--vermelho-fraco);
+    animation: brilho-Shanks 3s ease-in-out infinite;
+    font-weight: bold;
+    
+    
+}
+
+.cartao2 .descricao {
+    margin-top: 30px;
+    border-radius: 5px;
+    position: relative;
+    width: 270px;
+    height: 145px;
+    padding: 2px;
+    margin-top: -26px;
+    background-color: var(--vermelho-forte);
+    animation: brilho-Shanks 5s ease-in-out infinite;
+}
+.cartao2 .descricao .titulo{
+    margin-top: 3px;
+    text-align: center;
+    color: #f1ecff;
+    background-color: var(--vermelho-medio);
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 5px;
+
+}
+
+.cartao2 .descricao .texto{
+    margin-top: -10px;
+    background-color: var(--vermelho-fraco);
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+
+.fundo-2{
+    background: url(../Imagens/Shanks2-gif.gif);
+    background:cover no-repeat;
+    background-position-x: 55%;
+    
+    
+    
+}
+.container-imagem2 img {
+    width: 220px;
+    height: 230px;
+      
+}
+/* 
+Cartão 3 */
+
+.cartao3 .informacao {
+    margin-top: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: green;
+    width: 260px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.cartao3 .informacao .nome {
+    padding: 8px 10px;
+    font-family: 'Glossy',sans-serif;
+    color: black;
+    animation: brilho-Roger 3s ease-in-out infinite;
+    font-weight: bold;
+
+
+}
+
+.cartao3 .descricao {
+    margin-top: -70px;
+    border-radius: 5px;
+    position: relative;
+    width: 270px;
+    height: 145px;
+    padding: 2px;
+    margin-top: -26px;
+    background-color: var(--verde--ultra);
+    animation: brilho-Roger 5s ease-in-out infinite;
+}
+.cartao3 .descricao .titulo{
+    margin-top: 3px;
+    text-align: center;
+    color: #f1ecff;
+    background-color: var(--verde--forte);
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    animation: brilho-Roger 3s ease-in-out infinite;
+
+}
+
+.cartao3 .descricao .texto{
+    margin-top: -10px;
+    background-color: var(--verde--fraco);
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+
+.fundo-3{
+    background: url(../Imagens/Roger.gif);
+    background:cover no-repeat;
+    background-position-x: 55%;
+    
+    
+    
+}
+.container-imagem img {
+    width: 200px;
+    height: 215px;
+    position: relative;
+    left: 35px;
+      
+}
+
+/* Cartão 4 */
+
+.cartao4 .informacao {
+    margin-top: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color:#185BF5;
+    width: 260px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.cartao4 .informacao .nome {
+    padding: 8px 10px;
+    font-family: 'Glossy',sans-serif;
+    color: black;
+    animation: brilho-Kaidou 3s ease-in-out infinite;
+    font-weight: bold;
+
+
+}
+
+.cartao4 .descricao {
+    margin-top: -80px;
+    border-radius: 5px;
+    position: relative;
+    width: 270px;
+    height: 145px;
+    padding: 2px;
+    margin-top: -26px;
+    background-color: var(--azul-cristal-escuro);
+    animation: brilho-Kaidou 5s ease-in-out infinite;
+}
+.cartao4 .descricao .titulo{
+    margin-top: 3px;
+    text-align: center;
+    color: #f1ecff;
+    background-color: var(--roxo--medio);
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    animation: brilho-Kaidou 3s ease-in-out infinite;
+
+}
+
+.cartao4 .descricao .texto{
+    margin-top: -10px;
+    background-color: var(--roxo--fraco);
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+
+.fundo-4{
+    background: url(../Imagens/Kaidou-gif.gif);
+    background:cover no-repeat;
+    background-position-x: 74%;
+    
+    
+    
+}
+
+
+/* Cartão 5 */
+
+
+.cartao5 .informacao {
+    margin-top: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(roxo--barba-fraco);
+    width: 260px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.cartao5 .informacao .nome {
+    padding: 8px 10px;
+    font-family: 'Glossy',sans-serif;
+    color: black;
+    animation: brilho-Barba 3s ease-in-out infinite;
+    font-weight: bold;
+
+
+}
+
+.cartao5 .descricao {
+    margin-top: -80px;
+    border-radius: 5px;
+    position: relative;
+    width: 270px;
+    height: 145px;
+    padding: 2px;
+    margin-top: -26px;
+    background-color: var(--roxo--preto);
+    animation: brilho-Barba 5s ease-in-out infinite;
+}
+.cartao5 .descricao .titulo{
+    margin-top: 3px;
+    text-align: center;
+    color: #f1ecff;
+    background-color: var(--roxo--barba-medio);
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    animation: brilho-Barba 3s ease-in-out infinite;
+
+}
+
+.cartao5 .descricao .texto{
+    margin-top: -10px;
+    background-color: var(--roxo--barba-fraco);
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+
+.fundo-5{
+    background: url(../Imagens/black-beard-marshall-d-teach.gif);
+    background:cover no-repeat;
+    background-position-x: 50%;
+    
+    
+    
+}
+
+/* Cartão 6 */
+
+.cartao6 .informacao {
+    margin-top: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--rosa--fraco);
+    width: 260px;
+    height: 30px;
+    margin-top: 10px;
+}
+
+.cartao6 .informacao .nome {
+    padding: 8px 10px;
+    font-family: 'Glossy',sans-serif;
+    color: black;
+    animation: brilho-Yamato 3s ease-in-out infinite;
+    font-weight: bold;
+
+
+}
+
+.cartao6 .descricao {
+    margin-top: -80px;
+    border-radius: 5px;
+    position: relative;
+    width: 270px;
+    height: 145px;
+    padding: 2px;
+    margin-top: -26px;
+    background-color: #380410;
+    animation: brilho-Yamato 5s ease-in-out infinite;
+}
+.cartao6 .descricao .titulo{
+    margin-top: 3px;
+    text-align: center;
+    color: #f1ecff;
+    background-color: var(--rosa--forter);
+    font-size: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    animation: brilho-Yamato 3s ease-in-out infinite;
+
+}
+
+.cartao6 .descricao .texto{
+    margin-top: -10px;
+    background-color: var(--rosa--medio);
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    padding: 10px;
+    text-align: justify;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+
+.fundo-6{
+    background: url(../Imagens/Yamato-gif.gif);
+    background:cover no-repeat;
+    background-position-x: 50%;
+    
+    
+    
+}
